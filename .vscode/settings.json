@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "explorer.autoReveal": false,
+    "typescript.updateImportsOnFileMove.enabled": "never"
+}

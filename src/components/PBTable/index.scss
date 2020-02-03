@@ -1,0 +1,67 @@
+%sort-order {
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: 2px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+
+  thead {
+    text-align: left;
+
+    th {
+      padding-bottom: 10px;
+      font-size: 1.2em;
+      border-bottom: 2px solid #ccc;
+
+      & > .col-head {
+        cursor: pointer;
+
+        &.sort-asc::after {
+          @extend %sort-order;
+          content: "▲";
+        }
+
+        &.sort-desc::after {
+          @extend %sort-order;
+          content: "▼";
+        }
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        width: 30%;
+      }
+    }
+  }
+
+  tr {
+    td {
+      vertical-align: top;
+      padding: 2px 5px;
+      padding-bottom: 10px;
+    }
+  }
+
+  #no-results {
+    text-align: center;
+    color: #333;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    thead th {
+      font-size: 1em;
+    }
+    td {
+      font-size: 0.9em;
+    }
+  }
+}

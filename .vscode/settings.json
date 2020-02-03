@@ -2,6 +2,9 @@
     "files.exclude": {
         "**/node_modules": true
     },
+    "files.watcherExclude": {
+        "**/node_modules": true
+    },
     "explorer.autoReveal": false,
     "typescript.updateImportsOnFileMove.enabled": "never"
 }

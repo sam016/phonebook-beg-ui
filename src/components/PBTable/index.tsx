@@ -84,13 +84,6 @@ export class PBTable extends React.Component<PBTableProps, PBTableState> {
     }
 
     return orderBy(values, [sortCol], [sortOrder === SortOrder.descending ? 'desc' : 'asc']);
-
-    // return values.sort((first: PhoneEntry, second: PhoneEntry) => {
-    //   if (sortOrder === SortOrder.ascending) {
-    //     return (first as any)[sortCol] < (second as any)[sortCol] ? 1 : -1;
-    //   }
-    //   return (first as any)[sortCol] > (second as any)[sortCol] ? -1 : 1;
-    // });
   }
 
   getSortClassName(colName: string): string {
@@ -137,7 +130,7 @@ export class PBTable extends React.Component<PBTableProps, PBTableState> {
     const { isLoading, filSortedPhoneNumbers } = this.state;
 
     if (isLoading) {
-      return <div className="text-center">
+      return <div className="loader text-center">
         <ClipLoader
           size={50}
           color={"#123abc"}

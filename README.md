@@ -6,7 +6,9 @@ Simple WebApp built using ReactJS
 - filtering
 - sorting (asc, desc, none)
 
-## Run
+![PhoneBook Look](./demo/data/Phonebook-200104.gif)
+
+## Run Locally
 
 Execute the following command in terminal
 
@@ -15,3 +17,9 @@ npm start
 ```
 
 And, it will open up the site on your default browser.
+
+## Run online
+
+Or, you can run it online from [here](https://codesandbox.io/s/github/sam016/phonebook-beg-ui)
+
+> **NOTE:** codesandbox seems to have some sandbox issues due to which it cannot access the API
